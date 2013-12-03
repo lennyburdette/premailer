@@ -7,7 +7,7 @@ class Premailer
 
       # Merge CSS into the HTML document.
       # @return [String] HTML.
-      def to_inline_css
+      def to_inline_css(options={})
         doc = @processed_doc
         @unmergable_rules = CssParser::Parser.new
 
